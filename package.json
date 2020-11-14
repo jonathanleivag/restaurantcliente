@@ -6,16 +6,23 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "firebase": "^8.0.0",
+    "formik": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-firebase-file-uploader": "^2.4.3",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
-    "web-vitals": "^0.2.4"
+    "tailwindcss": "^1.9.6",
+    "web-vitals": "^0.2.4",
+    "yup": "^0.29.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run tailwindcss-main && react-scripts start",
+    "build": "npm run tailwindcss-main && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tailwindcss-main": "npx tailwindcss build src\\assets\\css\\tailwind.css -o src\\assets\\css\\main.css"
   },
   "eslintConfig": {
     "extends": [
